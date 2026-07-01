@@ -27,7 +27,7 @@ const STEPS = [
 const FEATURES = [
   {
     title: "Answers, not guesses",
-    body: "If it's not in your documents, Second Brain says so instead of making something up.",
+    body: "If it's not in your documents, Plabix Nexus says so instead of making something up.",
     icon: Sparkles,
   },
   {
@@ -48,7 +48,7 @@ export default function LandingPage() {
       <header className="border-b border-border">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
           <span className="font-display text-lg font-semibold tracking-tight">
-            Second Brain
+            Plabix Nexus
           </span>
           <nav className="flex items-center gap-2">
             <Button variant="ghost" asChild>
@@ -76,7 +76,7 @@ export default function LandingPage() {
               source.
             </h1>
             <p className="max-w-prose text-lg leading-relaxed text-muted-foreground">
-              Second Brain turns your handbooks, policies, and internal docs into a chat
+              Plabix Nexus turns your handbooks, policies, and internal docs into a chat
               interface your whole team can ask — every answer cited, nothing made up.
             </p>
             <div className="flex flex-wrap items-center gap-3">
@@ -96,7 +96,7 @@ export default function LandingPage() {
             <p className="mb-5 rounded-lg bg-muted px-4 py-3 text-sm">
               What&apos;s our policy on remote work?
             </p>
-            <p className="mb-3 text-sm font-medium text-muted-foreground">Second Brain answered</p>
+            <p className="mb-3 text-sm font-medium text-muted-foreground">Plabix Nexus answered</p>
             <p className="text-sm leading-relaxed">
               Employees may work remotely up to three days per week with manager approval
               <CitationChip n={1} />. Fully remote arrangements require VP sign-off and a
@@ -157,7 +157,7 @@ export default function LandingPage() {
                 Your documents already have the answers.
               </h2>
               <p className="mt-2 text-muted-foreground">
-                Second Brain just makes them searchable in plain language.
+                Plabix Nexus just makes them searchable in plain language.
               </p>
             </div>
             <Button size="lg" asChild>
@@ -171,7 +171,7 @@ export default function LandingPage() {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground sm:flex-row">
-          <span>© {new Date().getFullYear()} Second Brain.</span>
+          <span>© {new Date().getFullYear()} Plabix Nexus.</span>
           <span>Built with Next.js and Supabase.</span>
         </div>
       </footer>

@@ -1,6 +1,6 @@
-# Second Brain — RAG chat for your documents
+# Plabix Nexus — RAG chat for your documents
 
-Upload your organization's documents and ask them questions in plain language. Every answer is generated **only** from what's in your uploaded knowledge base, and every claim is cited back to the source document — if the answer isn't in your documents, Second Brain says so instead of guessing.
+Upload your organization's documents and ask them questions in plain language. Every answer is generated **only** from what's in your uploaded knowledge base, and every claim is cited back to the source document — if the answer isn't in your documents, Plabix Nexus says so instead of guessing.
 
 ```
 "Summarize our employee handbook."

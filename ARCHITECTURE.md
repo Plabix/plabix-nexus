@@ -2,7 +2,7 @@
 
 ## Overview
 
-Second Brain is a multi-tenant Next.js application. Every organization's documents, chats, and API keys are isolated by Postgres Row Level Security (RLS) — not just by application-layer `WHERE` clauses — so a bug in a query is not a tenant-isolation bug.
+Plabix Nexus is a multi-tenant Next.js application. Every organization's documents, chats, and API keys are isolated by Postgres Row Level Security (RLS) — not just by application-layer `WHERE` clauses — so a bug in a query is not a tenant-isolation bug.
 
 ```
 ┌─────────────┐     ┌──────────────────┐     ┌─────────────────┐

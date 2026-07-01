@@ -31,7 +31,7 @@ export function DashboardShell({
       <aside className="hidden w-64 shrink-0 border-r border-border bg-card lg:flex lg:flex-col">
         <div className="flex h-14 items-center border-b border-border px-4">
           <Link href="/dashboard" className="font-display text-lg font-semibold tracking-tight">
-            Second Brain
+            Plabix Nexus
           </Link>
         </div>
         <div className="flex-1 overflow-y-auto p-3">
@@ -54,7 +54,7 @@ export function DashboardShell({
               </SheetTrigger>
               <SheetContent side="left" className="w-72">
                 <SheetHeader>
-                  <SheetTitle className="font-display">Second Brain</SheetTitle>
+                  <SheetTitle className="font-display">Plabix Nexus</SheetTitle>
                 </SheetHeader>
                 <div className="mt-4">
                   <DashboardNav onNavigate={() => setMobileNavOpen(false)} />

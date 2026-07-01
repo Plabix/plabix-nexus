@@ -25,7 +25,7 @@ export function AppearanceSettings() {
     <Card>
       <CardHeader>
         <CardTitle>Appearance</CardTitle>
-        <CardDescription>Choose how Second Brain looks on this device.</CardDescription>
+        <CardDescription>Choose how Plabix Nexus looks on this device.</CardDescription>
       </CardHeader>
       <CardContent className="flex gap-3">
         {OPTIONS.map((option) => (

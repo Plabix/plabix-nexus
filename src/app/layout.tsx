@@ -7,11 +7,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Second Brain — Ask your documents anything",
-    template: "%s · Second Brain",
+    default: "Plabix Nexus — Ask your documents anything",
+    template: "%s · Plabix Nexus",
   },
   description:
-    "Upload your company's documents and get cited answers instantly. Second Brain is retrieval-augmented chat for the knowledge your team already wrote down.",
+    "Upload your company's documents and get cited answers instantly. Plabix Nexus is retrieval-augmented chat for the knowledge your team already wrote down.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

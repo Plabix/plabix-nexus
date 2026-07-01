@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 0001_init_schema.sql
--- Core schema for Second Brain as a Service.
+-- Core schema for Plabix Nexus as a Service.
 -- Multi-tenant: every domain table carries organization_id and is scoped by
 -- Row Level Security policies defined in 0002_rls_policies.sql.
 -- ============================================================================
