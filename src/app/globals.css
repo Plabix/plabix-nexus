@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Design language: "Ink & Paper"
+  A knowledge product should feel like a well-kept notebook, not a generic
+  AI dashboard. Warm paper neutrals + deep ink-violet for structure, with a
+  single highlighter-amber accent reserved for citations and highlighted
+  evidence — the one place in the product where color should draw the eye,
+  because it marks "this came from your documents."
+*/
+
+:root {
+  --radius: 0.625rem;
+
+  --background: #faf8f3;
+  --foreground: #1c1a2b;
+
+  --card: #ffffff;
+  --card-foreground: #1c1a2b;
+
+  --popover: #ffffff;
+  --popover-foreground: #1c1a2b;
+
+  --primary: #4338ca;
+  --primary-foreground: #faf8f3;
+
+  --secondary: #efeae0;
+  --secondary-foreground: #1c1a2b;
+
+  --muted: #f1eee6;
+  --muted-foreground: #6b6678;
+
+  --accent: #f5b700;
+  --accent-foreground: #1c1a2b;
+
+  --destructive: #dc2626;
+  --destructive-foreground: #faf8f3;
+
+  --success: #16a34a;
+  --success-foreground: #faf8f3;
+
+  --border: #e4dfd3;
+  --input: #e4dfd3;
+  --ring: #4338ca;
+
+  --font-display: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+.dark {
+  --background: #121120;
+  --foreground: #edeaf7;
+
+  --card: #1a1830;
+  --card-foreground: #edeaf7;
+
+  --popover: #1a1830;
+  --popover-foreground: #edeaf7;
+
+  --primary: #8b7cf6;
+  --primary-foreground: #121120;
+
+  --secondary: #211f38;
+  --secondary-foreground: #edeaf7;
+
+  --muted: #211f38;
+  --muted-foreground: #9c97b5;
+
+  --accent: #f5b700;
+  --accent-foreground: #121120;
+
+  --destructive: #f87171;
+  --destructive-foreground: #121120;
+
+  --success: #4ade80;
+  --success-foreground: #121120;
+
+  --border: #2c2948;
+  --input: #2c2948;
+  --ring: #8b7cf6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  ::selection {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: 9999px;
+  }
+}
